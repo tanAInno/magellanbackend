@@ -9,6 +9,10 @@ var magellanSchema = mongoose.Schema({
         type: String,
         default: ''
     },
+    CO2: {
+        type: String,
+        default: ''
+    },
     Temperature: {
         type: String,
         default: ''

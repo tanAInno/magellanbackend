@@ -20,6 +20,7 @@ exports.new = function (req, res) {
     var magellan = new Magellan();
     magellan.name = req.body.name;
     magellan.PM2_5 = req.body.PM2_5;
+    magellan.CO2 = req.body.CO2;
     magellan.Temperature = req.body.Temperature;
     magellan.Humidity = req.body.Humidity;
     magellan.Date = req.body.Date;

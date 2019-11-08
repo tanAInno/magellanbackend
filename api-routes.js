@@ -8,7 +8,11 @@ router.get('/', function (req, res) {
 });
 
 var magellanController = require('./controllers/magellanController')
+var skytecController = require('./controllers/skytecController')
 
+router.route('/skytecs')
+    .get(skytecController.index)
+    .post(skytecController.new)
 router.route('/magellans')
     .get(magellanController.index)
     .post(magellanController.new)
