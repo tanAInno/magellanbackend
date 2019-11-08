@@ -53,8 +53,22 @@ async function getData() {
 }
 
 async function postData() {
+    let array = data.split(",")
     await axios.post("http://localhost:8686/api/skytecs", {
-        data: data
+        sensorId: array[0],
+        date: array[1],
+        time: array[2],
+        digital1: array[3],
+        digital2: array[4],
+        digital3: array[5],
+        digital4: array[6],
+        analog0: array[7],
+        analog5: array[8],
+        humid: array[9],
+        temp1: array[10],
+        temp2: array[11],
+        temp3: array[12],
+        temp4: array[13],
     }).catch(error => console.log(error))
 }
 
