@@ -9,7 +9,11 @@ router.get('/', function (req, res) {
 
 var magellanController = require('./controllers/magellanController')
 var skytecController = require('./controllers/skytecController')
+var blynkController = require('./controllers/blynkController')
 
+router.route('/blynks')
+    .get(blynkController.index)
+    .post(blynkController.new)
 router.route('/skytecs')
     .get(skytecController.index)
     .post(skytecController.new)

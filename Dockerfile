@@ -5,7 +5,7 @@ WORKDIR /app
 copy . .
 RUN npm install
 
-EXPOSE 6060
+EXPOSE 8000
 
 CMD ["node","index"]
 

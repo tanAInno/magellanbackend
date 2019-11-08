@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     ports:
-      - "6060:6060"
+      - "8000:8000"
     links:
       - mongodb
   mongodb:
@@ -14,4 +14,4 @@ services:
     volumes:
       - ./data:/data/db
     ports:
-      - "27017:27017"
+      - "27019:27017"
